@@ -1,0 +1,45 @@
+// Theme
+// true => Dark
+// false => Light
+
+
+// Color Palette 
+primary = #112B64
+primary-variant = #115F63;
+
+secondary = #00d084
+
+// Theme
+warning = #FFC700
+danger = #DB2323
+
+
+// Light/Dark
+theme = true
+light = #FFFFFF
+dark = #095579
+
+// Background content
+content = #f2f2f2
+content-base = #FFFFFF
+
+// Text
+info = #B5F1FF
+
+// Utils
+color-theme(reverse=false)
+    theme != reverse ?  light : dark
+
+content-theme()
+    theme ? content : reverse(content)
+
+content-base-theme()
+    theme ? content-base : reverse(content-base)
+
+// Background colors
+colors = { primary: primary, secondary: secondary, warning: warning, danger: danger }
+
+/*for k, v in colors
+    .bg-{k}
+        background-color v
+*/
