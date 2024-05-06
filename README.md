@@ -1,4 +1,4 @@
-# shinier-gold
+# app-social.edu
 
 ## Project setup
 
@@ -33,14 +33,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 $env:NODE_ENV="development"; npm run serve # ou NODE_ENV=development seguido do run
 ```
-
-# Deploy configuration
-
-cd /var/www/ema
-sudo su
-cd web/
-rm -f -R css/ fonts/ js/ img/ index.html logo-ema.png
-cd ..
-mv /home/ubuntu/temp_frontend_ema/*/var/www/ema/web/
-chown www-data:www-data /var/www/ema/web/*
-ls -la web/
