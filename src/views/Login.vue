@@ -31,7 +31,7 @@
                                 </b-form-group>
                             </b-col>
                         </b-row>
-                        <button type="submit">Entrar (7 dias grátis)</button>
+                        <button type="submit">Entrar</button>
                     </b-form>
                 </div>
                 <div class="login">

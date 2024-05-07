@@ -3,10 +3,7 @@ import { errorFormater } from '@/commons/utils'
 
 export const api = axios.create({
   // baseURL: 'http://127.0.0.1:8000/api',
-  // https://api.englishfluencyprogram.com.br/api/
-  baseURL: process.env.NODE_ENV === 'production'
-    ? 'https://api.englishfluencyprogram.com.br/api/'
-    : 'https://api.dev.englishfluencyprogram.com.br/api/',
+  baseURL: 'https://apisocialedu-production.up.railway.app/api',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json'

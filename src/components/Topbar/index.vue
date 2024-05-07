@@ -21,9 +21,9 @@
           }}</span>
         </div>
       </div>
-      <div style="color: white; padding-right: 16px" v-if="$route.name === 'Login'">
+      <!-- <div style="color: white; padding-right: 16px" v-if="$route.name === 'Login'">
         Desenvolvido por: <a href="https://midiah.com.br/englishtechsolutions" target="_blank">English Tech Solutions</a>
-      </div>
+      </div> -->
       <div class="button" v-if="hasButton">
         <div @click="buttonEmit">{{ btnLabel }}</div>
       </div>
